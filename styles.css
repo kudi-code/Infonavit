@@ -180,9 +180,9 @@ header img{
 }
 .video--div iframe
 {
-    width: 80%;
+    width: 90%;
     max-width: 560px;
-    height: 50vh;
+    height: calc(100vw * .5);
     max-height: 315px;
 }
 .form form{
