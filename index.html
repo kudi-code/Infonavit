@@ -67,21 +67,22 @@
           <h2>Y con gusto te ayudamos a realizar este ejercicio en tu nómina</h2>
         </div>
         <div class="form--div">
-            <form>
+            <form action="enviar.php" method="post" id="myForm">
               <label for="fname">Nombre o razón social:</label><br>
-              <input type="text" class="input--affect" id="fname" name="fname"><br>
+              <input name="name" type="text" class="input--affect" id="name" name="fname"><br>
               <label for="email">Correo</label><br>
-              <input type="text" class="input--affect" id="email" name="email"><br>
+              <input name="mail" type="text" class="input--affect" id="mail" name="email"><br>
               <label for="phone">Teléfono</label><br>
-              <input type="text" class="input--affect" id="phone" name="phone"><br>
+              <input name="phone" type="text" class="input--affect" id="phone" name="phone"><br>
               <label for="sys">¿Cuentas con un sistema CONTPAQi® Nóminas?</label><br>
-              <input type="radio" id="y" class="sys--input" name="sys" value="sys--input">
+              <input name="radio" type="radio" id="y" class="sys--input" name="sys" value="sys--input">
               <label for="sys" class="sys--input">Si</label>
-              <input type="radio" id="n" class="sys--input"name="sys" value="sys--input">
+              <input name="radio" type="radio" id="n" class="sys--input"name="sys" value="sys--input">
               <label for="sys" class="sys--input">No</label>
-              <a href="#">              
+              <a href="#" onclick="document.getElementById('myForm').submit();">              
                 <div class="send-button">Enviar</div> 
-              </a>              
+              </a>
+              <button type="submit" class="btn btn-primary">ENVIAR </button>              
             </form>
          </div>         
       </section>
